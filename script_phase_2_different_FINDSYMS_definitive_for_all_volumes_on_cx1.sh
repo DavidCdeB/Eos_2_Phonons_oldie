@@ -8,7 +8,7 @@ run='/home/gmallia/CRYSTAL14_cx1/qcry14.v4'
 #run='/home/david/programs/CRYSTAL17/utils17/runcry17'
 # Note:  to check the SG you get in Findsym:
 # ...DISPERSI$ grep "symmetry_space_group_name"  ./1*/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_*/cry14v4/At_*displacement/Findsym/*findsym_numbers.cif
-
+# ...DISPERSI$ grep "_symmetry_Int_Tables_number 14"  ./1*/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_*/cry14v4/At_*displacement/Findsym/*findsym_numbers*.cif
 ScriptDir=`pwd`
 
 
