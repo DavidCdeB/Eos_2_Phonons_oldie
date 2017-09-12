@@ -60,9 +60,9 @@ cp FINDSYM_key_in_CRYSTAL.d12 ${i}.d12
 
 $run ${i} 64 01:00
 
-sed -i s/select=4:ncpus=16/select=1:ncpus=24/ FINDSYM_key_in_CRYSTAL.qsub
+sed -i s/select=4:ncpus=16/select=1:ncpus=16/ ${i}.qsub
 
-qsub -q pqnmh FINDSYM_key_in_CRYSTAL.qsub
+qsub -q pqnmh ${i}.qsub
 
 pwd
 cd $ScriptDir
@@ -110,9 +110,9 @@ cp FINDSYM_key_in_CRYSTAL.d12 ${i}.d12
 
 $run ${i} 64 01:00
 
-sed -i s/select=4:ncpus=16/select=1:ncpus=24/ FINDSYM_key_in_CRYSTAL.qsub
+sed -i s/select=4:ncpus=16/select=1:ncpus=16/ ${i}.qsub
 
-qsub -q pqnmh FINDSYM_key_in_CRYSTAL.qsub
+qsub -q pqnmh ${i}.qsub
 
 pwd
 cd $ScriptDir
