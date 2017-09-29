@@ -23,6 +23,7 @@ for i in ${VOLUMES}
 do 
 pwd
 echo $i
+cd DISPERSI
 cd $i 
 pwd
 cd SCELPHONO_Landau
