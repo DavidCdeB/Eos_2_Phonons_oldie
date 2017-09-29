@@ -5,6 +5,8 @@ run='/home/gmallia/CRYSTAL17_cx1/v1/qcry'
 
 ScriptDir=`pwd`
 
+mkdir DISPERSI
+
 VOLUMES="109.391537
 110.840213
 112.366531
@@ -24,6 +26,7 @@ do
 pwd
 echo $i
 pwd
+cd DISPERSI
 rm -Rf $i
 mkdir $i
 pwd
