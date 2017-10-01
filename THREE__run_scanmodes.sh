@@ -31,6 +31,7 @@ for i in ${SCANMODE_1_FILES}
 do 
 pwd
 echo $i
+cd DISPERSI
 cd $i
 pwd
 cd SCELPHONO_Landau
