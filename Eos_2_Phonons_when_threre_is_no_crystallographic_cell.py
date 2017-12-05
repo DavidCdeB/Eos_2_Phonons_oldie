@@ -124,6 +124,8 @@ CRYSTAL
 
         # Trailing lines:
         f.write("""FREQCALC
+TEMPERAT
+100 10 2000
 END
 END\n""")
 
