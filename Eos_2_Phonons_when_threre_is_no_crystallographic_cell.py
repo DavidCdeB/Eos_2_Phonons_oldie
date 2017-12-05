@@ -1,11 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys
+import os
+import glob
+
 
 global N_atom_irreducible_unit
 N_atom_irreducible_unit = 5
 
-filename = '117.743646.out'
+# Extracting the number of k-points ( name of variable = "N_k" ):
+path='./'
+filename = os.path.join(path, '*.out')
+print 'filename = ', filename
+for fname in glob.glob(filename):
+  print fname
 
 VOLUMES = []
 P0 = []
@@ -17,7 +25,7 @@ Xs = []
 Ys = []
 Zs = []
 
-with open(filename) as gout:
+with open(fname) as gout:
     final_optimized_geometry = False
     for line in gout:
         if 'FINAL OPTIMIZED GEOMETRY' in line:
@@ -102,7 +110,7 @@ for block_i, vol_i in zip(range(0, len(rows), interval), range(len(VOLUMES))):
     lines += ['   '.join(row) for row in rows[block_i : block_i + interval]]
 
     # Write the file:
-    with open(VOLUMES[vol_i] + '.d12', 'w') as f:
+    with open(VOLUMES[vol_i] + '_FREQCALC.d12', 'w') as f:
 
         # Preceding lines:
         f.write("""Calcite
@@ -115,8 +123,7 @@ CRYSTAL
             f.write(line + '\n')
 
         # Trailing lines:
-        f.write("""OPTGEOM
-CVOLOPT
+        f.write("""FREQCALC
 END
 END\n""")
 

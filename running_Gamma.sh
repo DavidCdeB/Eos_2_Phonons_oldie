@@ -1,9 +1,5 @@
 #
 
-# These have already been runned:
-#121.725312/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_0.4000_displacement/Findsym/121.725312_findsym_numbers_0_1/CVOLOPT_indicating_SG/FREQCALC
-#120.133809/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_-1.6000_displacement/Findsym/120.133809_findsym_numbers_0_1/CVOLOPT_indicating_SG/
-
 source ~/.profile
 
 run='/home/gmallia/CRYSTAL17_cx1/v1/qcry'
@@ -11,13 +7,13 @@ run='/home/gmallia/CRYSTAL17_cx1/v1/qcry'
 ScriptDir=`pwd`
 
 DIRS="
-116.974380/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_-3.2000_displacement/Findsym/116.974380_findsym_numbers_0_1/CVOLOPT_indicating_SG/
-118.551116/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_-2.4000_displacement/Findsym/118.551116_findsym_numbers_0_1/CVOLOPT_indicating_SG/
-115.432482/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_3.6000_displacement/Findsym/115.432482_findsym_numbers_0_1/CVOLOPT_indicating_SG/
-113.896849/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_-4.4000_displacement/Findsym/113.896849_findsym_numbers_0_1/CVOLOPT_indicating_SG/
-112.366531/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_2/cry14v4/At_-4.8000_displacement/Findsym/112.366531_findsym_numbers_0_1/CVOLOPT_indicating_SG/
-110.840213/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_2/cry14v4/At_5.6000_displacement/Findsym/110.840213_findsym_numbers_0_1/CVOLOPT_indicating_SG/
-109.391537/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_2/cry14v4/At_-6.4000_displacement/Findsym/109.391537_findsym_numbers_0_1/CVOLOPT_indicating_SG/
+121.491735/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_-0.8000_displacement/Findsym/121.491735_findsym_numbers_0_1/CVOLOPT_indicating_SG
+119.881407/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_-1.6000_displacement/Findsym/119.881407_findsym_numbers_0_1/CVOLOPT_indicating_SG
+118.293364/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_-2.4000_displacement/Findsym/118.293364_findsym_numbers_0_1/CVOLOPT_indicating_SG
+116.724991/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_3.2000_displacement/Findsym/116.724991_findsym_numbers_0_1/CVOLOPT_indicating_SG
+115.163979/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_-4.0000_displacement/Findsym/115.163979_findsym_numbers_0_1/CVOLOPT_indicating_SG
+113.609038/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_1/cry14v4/At_4.4000_displacement/Findsym/113.609038_findsym_numbers_0_1/CVOLOPT_indicating_SG
+112.114272/SCELPHONO_Landau/Freqcalc_Supercell_Landau/SCANMODE_2/cry14v4/At_-5.2000_displacement/Findsym/112.114272_findsym_numbers_0_1/CVOLOPT_indicating_SG
 "
 
 for i in ${DIRS}; do
